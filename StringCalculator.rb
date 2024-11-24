@@ -14,10 +14,10 @@ class StringCalculator
   end
   
   def process_string_and_get_array(nums)
-    array = nums.split(',')
+    array = nums.split(/\s*([,\\n]+|\s\s)\s*/)
     array
   end
   
 end
 
-StringCalculator.new.add('-2,-3,5,8')
+StringCalculator.new.add(''1\n2\n\n3')
