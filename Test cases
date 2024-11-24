@@ -1,0 +1,9 @@
+Step 1: Simple calculator
+Input: "1,2,3,4,5"
+Expected output: 15
+
+Input : ""
+Expected output: "Array is empty. Sum is 0"
+
+Input : "-2,-5,3,9"
+Expected Output: 5
