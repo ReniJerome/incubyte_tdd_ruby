@@ -14,7 +14,13 @@ class StringCalculator
   end
   
   def process_string_and_get_array(nums)
-    array = nums.split(/\s*([,\\n]+|\s\s)\s*/)
+    delimiter = ',';
+    if nums.start_with?("//")
+      delimiter = nums[2]
+      puts delimiter
+    end
+    
+    array = nums.split(/\s*([,#{delimiter}\\n]+|\s\s)\s*/)
     array
   end
   
