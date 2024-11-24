@@ -21,3 +21,9 @@ __________________________
 Step 4: Handle other delimiters 
 Input : "//;\n1;2"
 Expected Output: 3
+__________________________
+Step 5: Negative numbers should not be allowed
+Input : "//;\n1;2;-10;-20"
+Output : #<RuntimeError: Negative numbers present>
+-10
+-20
